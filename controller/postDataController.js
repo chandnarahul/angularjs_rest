@@ -8,7 +8,7 @@ restApiDemo.component('postData', {
         '<td>{{post.id}}</td>'+
         '<td>{{post.title}}</td>'+
         '<td>{{post.body}}</td>'+
-        '<td><input type="button" value="delete"></td>'+
+        '<td><input type="button" value="delete" ng-click="deletePost(post.id)"></td>'+
     '</tr>'+
     '</table>',
     controller: 
@@ -19,7 +19,9 @@ restApiDemo.component('postData', {
                 $scope.posts = response.data;
             });
         
-        
+        $scope.deletePost = function(id) {
+           alert('deleted '+id);
+        }
         
     }
 });
