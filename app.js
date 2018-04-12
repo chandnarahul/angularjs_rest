@@ -1,1 +1,1 @@
-var restApiDemo=angular.module('restApiDemo', ['postData']);
+var restApiDemo=angular.module('restApiDemo', ['postData','albumData']);
