@@ -3,20 +3,20 @@
 
 <head>
     <title>AngularJS Rest API</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="modules/currentViewModule.js"></script>
+    <script src="angular.js"></script>
+    <script src="angular-route.js"></script>
     <script src="modules/postDataModule.js"></script>
     <script src="modules/albumDataModule.js"></script>
-    <script src="controller/currentViewController.js"></script>
-    <script src="controller/postDataController.js"></script>
-    <script src="controller/albumDataController.js"></script>
+    <script src="component/postDataComponent.js"></script>
+    <script src="component/albumDataComponent.js"></script>
     <script src="app.js"></script>
 </head>
 
 <body>
-    <a ng-click="updateCurrentView()">Admin</a>
-    <current-view>
-    </current-view>
-</body>
+<a href="#!home">Home</a>
+<a href="#!admin">Admin</a>
+<a ng-href="#!admin/12">Admin 12</a>
+
+<ng-view></ng-view>
 
 </html>
