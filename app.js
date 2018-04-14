@@ -1,1 +1,1 @@
-var restApiDemo=angular.module('restApiDemo', ['postData','albumData']);
+var restApiDemo=angular.module('restApiDemo', ['currentView','postData','albumData']);
